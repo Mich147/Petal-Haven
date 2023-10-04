@@ -343,9 +343,6 @@ section{
     gap: 1rem;
     background: #454343;
 }
-.contact-box img{
-    width:100px;
-}
 
 .contact-box h4{
     margin-bottom: 1.5rem;
@@ -367,13 +364,15 @@ section{
     color: var(--main-color);
 }
 .contact-box h5{
-    font-size: 15px;
-    font-weight: 600;
-    color: #999999;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--bg-color);
+    margin-left: 30px;
 }
 .social{
     display: flex;
     margin-top: 1.8rem;
+    margin-left: 30px;
 }
 .social i{
     height: 37px;
@@ -399,8 +398,11 @@ footer{
     color: var(--2nd-color);
     font-size: 15px;
     letter-spacing: 1px;
-    padding: 20px;
-    
+    height: 20;
+    width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 0;
+   
 }
 .scroll-top{
     position: fixed;
@@ -416,7 +418,7 @@ footer{
 }
 /* product page */
 
-.page-header{
+#page-header{
     width: 100%;
     height: 40vh;
     background-image: url(../img/home-bg2.jpg);
@@ -479,6 +481,9 @@ footer{
     padding: 5px 10px;
     margin-bottom: 10px;
 }
+#prodetails .single-pro-details select:hover{
+    color: var(--main-color);
+}
 #prodetails .single-pro-details input{
     width: 50px;
     height: 30px;
@@ -486,6 +491,10 @@ footer{
     font-size: 16px;
     margin-right: 10px;
 }
+#prodetails .single-pro-details input:hover{
+    color: var(--main-color);
+}
+
 #prodetails .single-pro-details input:focus{
     outline: none;
 }
@@ -504,6 +513,290 @@ footer{
 .center-text p{
     text-align: center;
 }
+
+/* Blog Page */
+#page-header.blog-header{
+    background-image: url(../img/home-bg1.jpg);
+    text-align: center;
+}
+
+#blog{
+    padding: 100px 150px 0 150px;
+   
+}
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+#blog .blog-img{
+    width: 100%;
+    margin-right: 40px;
+}
+#blog img{
+    width: 500px;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#blog .blog-details a{
+    font-size: 15px;
+    color: var(--text-color);
+    font-weight: 700;
+    position: relative;
+    transition: all .50s ease;
+}
+#blog .blog-details a::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: var(--text-color);
+    position: absolute;
+    top: 11px;
+    right: -60px;
+}
+#blog .blog-details a:hover{
+    color: var(--main-color);
+}
+#blog .blog-details a:hover::after{
+    background-color: var(--main-color);
+}
+#blog .blog-box h4{
+ 
+    top: -40px;
+    left: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--2nd-color);
+}
+#blog .blog-box h1{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--bg-color);
+}
+
+
+/* About Us Page */
+
+
+#page-header.about-us{
+    background-image: url(../img/home-bg3.jpg);
+    text-align: center;
+}
+.about-us h2 {
+    margin-top: 20px;
+    font-size: 50px;   
+}
+.about-us p {
+    margin-top: 20px;
+    font-size: 20px;   
+}
+#about-head{
+    display: flex;
+    align-items: center;
+}
+#about-head h1{
+    margin-bottom: 50px;
+}
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+#about-head div{
+    padding-left: 40px;
+}
+#about-vid{
+    text-align: center;
+}
+#about-vid .video{
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+#about-vid .video video{
+    border-radius: 20px;
+}
+#review-head{
+    display: flex;
+}
+#review-head .review img{
+    width: 300px;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+#review-head .review img:hover{
+    transform: scale(1.1);
+}
+#review-head .review p{
+    text-align: start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#review-head .review p:hover{
+    color: var(--main-color);
+    transition: all .50s ease;
+}
+h1{
+    margin-left: 100px;
+}
+#team-head{
+    display: flex;
+    justify-content: space-between;
+}
+#team-head .team img{
+    width: 300px;
+    border-radius: 150px;
+ 
+}
+#team-head .team img:hover{
+    transform: scale(1.2);
+}
+#team-head .team p{
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+#team-head .team h2{
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#team-head .team p:hover{
+    color: var(--main-color);
+    transition: all .50s ease;
+}
+h1{
+    margin-left: 100px;
+}
+
+
+
+
+
+/* Contact Page */
+#page-header.contact-us{
+    background-image: url(../img/home-bg4.jpg);
+    text-align: center;
+}.contact-us h2 {
+    margin-top: 20px;
+    font-size: 50px;   
+}
+.contact-us p {
+    margin-top: 20px;
+    font-size: 20px;   
+}
+
+#contact-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#contact-detail .detail{
+     width: 40%;
+}
+#contact-detail .detail span,
+#form-detail form span{
+    font-size: 14px;
+}
+#contact-detail .detail h2,
+#form-detail form h2{
+    font-size: 36px;  
+    line-height: 45px;
+    font-weight: 500;
+    padding: 20px 0;
+ }
+#contact-detail .detail h3{
+    font-size: 16px;  
+    padding-bottom: 15px; 
+    font-style: italic;
+}
+#contact-detail .detail li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+#contact-detail .detail li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+#contact-detail .detail li p{
+    margin: 0;
+    font-size: 14px;   
+}
+#contact-detail .map{
+    width: 55%;
+    height: 400px;
+}
+#contact-detail .map iframe{
+    width: 100%;
+    height: 100%;
+}
+#form-detail{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #9b324a;
+}
+#form-detail form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+}
+#form-detail form input,
+#form-detail form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 14px;
+    border-radius: 2px solid #9b324a;
+}
+#form-detail form button{
+    background-color: var(--main-color);
+    width: 15%;
+    height: 40px;
+    color: var(--bg-color);
+    outline: none;
+    border-radius: 10px;
+}
+#form-detail .people div{
+    padding-bottom: 25px;
+}
+#form-detail .people div img{
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+#form-detail .people div p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+#form-detail .people div p span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+
+
+
+/* Cart Page */
+
 
 /* @media Sizes */
 
@@ -561,6 +854,7 @@ footer{
         --h2-font: 2rem;
         --p-font: 1.1rem;
     }
+
     .home-text h1{
         line-height: 1.1;
     }
@@ -582,7 +876,71 @@ footer{
         width: 100%;
 
     }
+    /* Blog Page */
+    #blog{
+        padding: 10px 20px 0 20px;
+    }
+
+    #blog .blog-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    #blog .blog-img{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
 }
+ /* About Page */
+    @media (max-width: 477px){
+        #about-head{
+            flex-direction: column;
+        }
+        #about-head img{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        #about-head div{
+            padding-left: 0;
+        }
+        #about-vid .video{
+            width: 70%;
+            flex-direction: column;
+    }
+    /* Contact Page */
+    #contact-detail{
+        flex-direction: column;
+    }
+    #contact-detail .detail{
+        width: 100%;
+   }
+   #contact-detail .map{
+        width: 100%;
+   }
+    #form-detail{
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
+  #form-detail form{
+    width: 100%; 
+    margin-bottom: 30px;
+  }
+}
+
+ /* Contact Page */
+@media (max-width: 768px){
+    #form-detail{
+        padding: 40px;
+    }
+    #form-detail form{
+        width: 50%; 
+    }
+}
+
 
 
 
