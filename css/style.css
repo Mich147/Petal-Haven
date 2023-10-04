@@ -12,7 +12,7 @@
     --bg-color: #fff;
     --main-color: #9b324a;
     --text-color: #010101;
-    --2nd-color:#454343;
+    --2nd-color:product;
     --big-font:5rem;
     --h2-font:2.3rem;
     --p-font:1.3rem;
@@ -121,6 +121,7 @@ section{
     color: var(--2nd-color);
     line-height: 1.3;
     margin-bottom: 25px;
+    display: contents;
 }
 
 .home-text p{
@@ -418,7 +419,7 @@ footer{
 }
 /* product page */
 
-#page-header{
+#page-header {
     width: 100%;
     height: 40vh;
     background-image: url(../img/home-bg2.jpg);
@@ -430,7 +431,9 @@ footer{
     text-align: left;
     margin-top: 100px;
     flex-direction: column;
+   
 }
+
 #pagination {
     text-align: center;
 }
