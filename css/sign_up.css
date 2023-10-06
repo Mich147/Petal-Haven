@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500&display=swap');
+
+.sign_up{
+    background-image: url(../img/home-bg1.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    box-shadow: 0 2.8px 2.2px rgb(0, 0, 0, 0.48), 0 12.8px 10.5px rgb(0, 0, 0, 0.58);
+    width: 50%;
+    max-width: 100%;
+    align-items: center;
+}
+.header{
+    background-color: #d9d9d9;
+    padding: 20px 0;
+}
+.header h2{
+    color: #d9d9d9;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #9b324a;
+    padding: 30px;
+}
+.form{
+    padding: 30px;
+}
+.form-control{
+    margin-bottom: 30px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    width: 100%;
+    border: 2px solid #d9d9d9;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 12px;
+    display: block;
+}
+.form-control input:focus{
+    outline: 0;
+    color: black;
+}
+.form-control.success input{
+    border-color: #9b324a;
+}
+.form-control.error input{
+    border-color: #df3434;
+}
+.form-control i{
+    position: absolute;
+    right: 12px;
+    top: 45px;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+.form-control small{
+    color: #df3434;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.success i.fas fa-check-circle{
+    color: #20b320;
+    visibility: visible;
+}
+.form-control.error i.fas fa-exclamation-circle{
+    color: #df3434;
+    visibility: visible;
+}
+.form .form-btn{
+    background-color: #9b324a;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 15px;
+    color: #d9d9d9;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.form-btn:hover{
+    background-color: #454343;
+}
